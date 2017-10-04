@@ -13,4 +13,4 @@ install.packages('aGE_0.0.0.9000.tar.gz',repos=NULL,type='source')
 ```
 
 # Reference
-A powerful and data-adaptive test for rare varaint-based GxE Analysis (Unpublished Work)
+Yang T, Chen H, Wei P. A powerful and data-adaptive test for rare varaint-based GxE Analysis. 2017 (Unpublished Work)
