@@ -1,5 +1,6 @@
 # aGE
 R package designed for rare variants GxE analysis. 
+* works both on linux R and windows R, R version > 3.4.1 
 
 # How to install aGE
 * Step 1: download the 'aGE_0.0.0.9000.tar.gz' file into the local folder.
