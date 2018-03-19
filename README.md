@@ -1,4 +1,4 @@
-# RedMed
+# RsqMed
 R package designed for calculating the Rsq measure for high-dimensional mediation analysis. 
 * works under on linux R, R version > 3.4.0
 
@@ -7,7 +7,7 @@ GMMAT: GMMAT can be found at https://github.com/hanchenphd/GMMAT. The current us
 SIS: more in https://cran.r-project.org/web/packages/SIS/SIS.pdf
 
 
-# How to install aGE
+# How to install RsqMed
 * Step 1: download the 'RsqMed_0.0.0.9000.tar.gz' file into the local folder.
 * Step 2: open R, and set the directory to this local folder 
  ```r
