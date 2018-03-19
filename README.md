@@ -14,4 +14,5 @@ install.packages('aGE_0.0.0.9000.tar.gz',repos=NULL,type='source')
 ```
 
 # Reference
-Yang T, Chen H, Wei P. A powerful and data-adaptive test for rare varaint-based GxE Analysis. 2017 (Unpublished Work)
+Yang T, Chen H, Tang HW, Li D, Wei P. A Powerful and Data-Adaptive Test for Rare Variant-Based GxE Analysis, submitted to
+Statistics in Medicine. 
