@@ -1,18 +1,31 @@
-## aGE
+## RsqMed
 
-This page included the aGE packages, specifically designed for rare-variant based GxE interaction test. It inclucdes 2 functions. It works for binomial and guassian outcome.
+This page included the RsqMed packages
 
-### aGE
-test the GxE interaction
-## aGE_joint
-test for genetic main effect and GxE interaction
+### Function to estimate Rsq
+Rsq.measure
 
+### Sample code 
 ```markdown
 
-# aGE
-aGE(Y=y, G=RVs, cov =covarites, model =  FAM,  n.perm = 1000, nonparaE=F )
+```r
+#simulate the data
+library(MASS)
+require('RsqMed')
+X<-rnorm(100)
+alpha<-rnorm(100)
+M<-matrix(NA,nrow=100,ncol=100)
+for (i in 1:100){
+M[,i]<-alpha[i]*X+rnorm(100)
+}
+beta<-rnorm(100)
+Cov <-mvrnorm(n=100,mu=c(0,0), Sigma=diag(c(1,1)))
+Cov.beta <-c(1,-1)
+Y<- as.vector(2*X + M %*% beta + Cov %*%Cov.beta + rnorm(100))
 
-# aGE_joint
-aGE_joint(Y=y, G=RVs, cov =covarites, model =  FAM,  n.perm = 1000, nonparaE=F )
-
+require(RsqMed)
+#call the function
+Rsq.measure(p=1/2, outcome=Y,med=M,covar=Cov,indp=X, ISIS=F,seed=1234)
+Rsq.measure(p=1/2, outcome=Y,med=M,covar=Cov,indp=X, ISIS=T,seed=1234)
+```
 
