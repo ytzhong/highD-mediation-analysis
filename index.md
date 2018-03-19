@@ -1,6 +1,6 @@
-## RsqMed
+## R package: RsqMed 
 
-This page included the RsqMed packages
+This page introduce the RsqMed package
 
 ### Function to estimate Rsq
 Rsq.measure
@@ -25,7 +25,7 @@ Y<- as.vector(2*X + M %*% beta + Cov %*%Cov.beta + rnorm(100))
 
 require(RsqMed)
 #call the function
-Rsq.measure(p=1/2, outcome=Y,med=M,covar=Cov,indp=X, ISIS=F,seed=1234)
-Rsq.measure(p=1/2, outcome=Y,med=M,covar=Cov,indp=X, ISIS=T,seed=1234)
+Rsq.measure(p=1/2, outcome=Y,med=M,covar=Cov,indp=X, method='ISIS',seed=1234)
+Rsq.measure(p=1/2, outcome=Y,med=M,covar=Cov,indp=X, method='SIS',seed=1234)
 ```
 
