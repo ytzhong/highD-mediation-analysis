@@ -25,7 +25,9 @@ Y<- as.vector(2*X + M %*% beta + Cov %*%Cov.beta + rnorm(100))
 
 require(RsqMed)
 #call the function
+#point estimate
 Rsq.measure(p=1/2, outcome=Y,med=M,covar=Cov,indp=X, method='ISIS',seed=1234)
-Rsq.measure(p=1/2, outcome=Y,med=M,covar=Cov,indp=X, method='SIS',seed=1234)
+#bootstrap using CI
+CI.Rsq.measure(p=1/2, outcome=Y,med=M,covar=Cov,indp=X, method='SIS',seed=1234)
 ```
 
