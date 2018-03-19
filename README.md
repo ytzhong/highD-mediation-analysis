@@ -22,8 +22,8 @@ install.packages('SIS')
 #install GMMAT
 install.packages('devtools')
 install_github('hanchenphd/GMMAT')
-#or install by local resources
-install.packages('RsqMed_0.0.0.9000.tar.gz',repos=NULL,type='source')
+#or install by local resources (recommended)
+install.packages('GMMAT_0.7-1.tar.gz',repos=NULL,type='source')
  ```
 * Step 4: install the package in R
 ```r
