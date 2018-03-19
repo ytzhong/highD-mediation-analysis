@@ -2,8 +2,8 @@
 R package designed for calculating the Rsq measure for high-dimensional mediation analysis. 
 * works under on linux R, R version > 3.4.0
 
-Needed package:
-GMMAT: GMMAT can be found at https://github.com/hanchenphd/GMMAT. The current used version is 0.7
+Required R package:
+GMMAT: GMMAT can be found at https://github.com/hanchenphd/GMMAT. The current used version is 0.7. It is also included in this folder. 
 SIS: more in https://cran.r-project.org/web/packages/SIS/SIS.pdf
 
 
@@ -16,9 +16,14 @@ SIS: more in https://cran.r-project.org/web/packages/SIS/SIS.pdf
  
 * Step 3: install the two required R packages
  ```r
+ #install SIS
 install.packages('SIS')
+
+#install GMMAT
 install.packages('devtools')
 install_github('hanchenphd/GMMAT')
+#or install by local resources
+install.packages('RsqMed_0.0.0.9000.tar.gz',repos=NULL,type='source')
  ```
 * Step 4: install the package in R
 ```r
@@ -27,3 +32,5 @@ install.packages('RsqMed_0.0.0.9000.tar.gz',repos=NULL,type='source')
 
 # Reference
 Yang T, Chen H, Niu J, Wei P, Estimation of total mediation effect for high-dimensional omics mediators, to be submitted.
+
+Chen H, Wang C, Conomos MP, Stilp AM, Li Z, Sofer T, Szpiro AA, Chen W, Brehm JM, Celedón JC, Redline S. Control for population structure and relatedness for binary traits in genetic association studies via logistic mixed models. The American Journal of Human Genetics. 2016 Apr 7;98(4):653-66.
