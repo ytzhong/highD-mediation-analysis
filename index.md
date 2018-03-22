@@ -2,8 +2,11 @@
 
 This page introduce the RsqMed package
 
-### Function to estimate Rsq
-Rsq.measure
+### Function to estimate the point estimate of  Rsq
+Rsq.measure()
+
+### Function to calculate the confidence interval of Rsq
+CI.Rsq.measure()
 
 ### Sample code 
 ```markdown
