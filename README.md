@@ -31,6 +31,6 @@ install.packages('RsqMed_0.0.0.9000.tar.gz',repos=NULL,type='source')
 ```
 
 # Reference
-Yang T, Chen H, Niu J, Wei P, Estimation of total mediation effect for high-dimensional omics mediators, to be submitted.
+Yang T, Chen H *, Niu J* , Wei P, Estimation of total mediation effect for high-dimensional omics mediators, to be submitted. (Chen and Niu contributed equally)
 
 Chen H, Wang C, Conomos MP, Stilp AM, Li Z, Sofer T, Szpiro AA, Chen W, Brehm JM, Celedón JC, Redline S. Control for population structure and relatedness for binary traits in genetic association studies via logistic mixed models. The American Journal of Human Genetics. 2016 Apr 7;98(4):653-66.
