@@ -39,14 +39,22 @@ str(example)
 The example is saved with the package. X can be regarded as independent variable, Y is the outcome variable, Cov is the covariate matrix, M is the putative mediator matrix.
 
 ### Calculating point estimates 
+Estimating the Rsq.mediated with variable selection: 
 ```{r, warning=FALSE, eval=F}
 Rsq.measure(p=1/2, outcome=example$Y,med=example$M,covar=example$Cov,indp=example$X, method='iSIS',iter.max=1, screening=F,init.cutoff=0.1)$output
 ```
+
+Estimating the Rsq.mediated without variable selection: 
+```{r, warning=FALSE, eval=F}
+Rsq.measure(p=1/2, outcome=example$Y,med=example$M,covar=example$Cov,indp=example$X, method='ALL')$output
+```
+
 Use ?Rsq.measure to read more about the input and output of the Rsq.measure function. We added a prescreening step in this function, which is not presented in the paper. It may decrease computation burden in some cases and we suggest using a generous cut-off point.
 
-### Calculate the confidence intervals using bootstrap
+### Calculate the confidence intervals using nonparametric bootstrap
+The 95% CI can be obtained by:
 ```{r, message=FALSE, warning=FALSE, eval=F}
-CI.Rsq.measure(p=1/2, outcome=example$Y[1:50],med=example$M[1:50,1:10],covar=example$Cov[1:50,],indp=example$X[1:50], method='ALL', B=2)$CI
+CI.Rsq.measure(p=1/2, outcome=example$Y,med=example$M,covar=example$Cov,indp=example$X, method='ALL', B=2)$CI
 ```
 Use ?CI.Rsq.measure to read more about the input and output of the CI.Rsq.measure function.
 
