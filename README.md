@@ -36,8 +36,6 @@ require(RsqMed)
 str(example)
 ```
 The example is saved with the package. X can be regarded as independent variable, Y is the outcome variable, Cov is the covariate matrix, M is the putative mediator matrix.
-$$Y_i = 2X + M\beta + Cov\beta_{cov} + r_2$$
-$r_1$ and $r_2$ are the residuals, $\alpha_i$ is the element of alpha, $\beta$ is the beta vector, $\beta_{cov}$ is the Cov.beta.
 
 ### Calculating point estimates 
 ```{r, warning=FALSE, eval=F}
