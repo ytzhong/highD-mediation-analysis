@@ -25,12 +25,12 @@ install_github('hanchenphd/GMMAT')
  ```
 * Step 4: install the package in R
 ```r
-install.packages('RsqMed_0.0.1.1.tar.gz',repos=NULL,type='source')
+install.packages('RsqMed_0.1.1.tar.gz',repos=NULL,type='source')
 ```
 
 # Example  
 ## Impute data
-The data "example" is a simulated sample with 100 observations, which looks like the following.
+The data "example" is a simulated sample with 100 observations, which can be accessed by the following code.
 ```{r, echo=FALSE}
 require(RsqMed)
 str(example)
