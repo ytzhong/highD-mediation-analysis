@@ -1,6 +1,7 @@
 # RsqMed (updated Sep 22, 2019)
 R package designed for calculating the Rsq measure for high-dimensional mediation analysis. 
 * works under on linux R, R version > 3.5.0
+* two functions available: "Rsq.measure" is used to estimate the point estimate; "CI.Rsq.measure" is used to estimate the 95% confidence interval.
 
 Required R package:
 * GMMAT: GMMAT can be found at https://github.com/hanchenphd/GMMAT. The current used version is 1.1. Details of the installation steps are provided in https://cran.r-project.org/web/packages/GMMAT/vignettes/GMMAT.pdf.
