@@ -3,18 +3,18 @@ R package designed for calculating the Rsq measure for high-dimensional mediatio
 * works under on linux R, R version > 3.5.0
 
 Required R package:
-* GMMAT: GMMAT can be found at https://github.com/hanchenphd/GMMAT. The current used version is 1.1. It is also included in this folder. 
+* GMMAT: GMMAT can be found at https://github.com/hanchenphd/GMMAT. The current used version is 1.1. Details of the installation steps are provided in https://cran.r-project.org/web/packages/GMMAT/vignettes/GMMAT.pdf.
 * SIS: more in https://cran.r-project.org/web/packages/SIS/SIS.pdf
 
 
 # How to install RsqMed
-* Step 1: download the 'RsqMed_0.0.0.9000.tar.gz' file into the local folder.
+* Step 1: download the 'RsqMed_0.1.1.tar.gz' file into the local folder.
 * Step 2: open R, and set the directory to this local folder 
  ```r
  setwd('local folder')
  ```
  
-* Step 3: install the two required R packages
+* Step 3: install the two required R packages, GMMAT and SIS. 
  ```r
  #install SIS
 install.packages('SIS')
